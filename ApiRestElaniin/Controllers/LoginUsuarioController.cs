@@ -33,6 +33,7 @@ namespace ApiRestElaniin.Controllers
         }
         //Permite el login de usuario
         [HttpGet]
+        [Route("Login")]
         public IActionResult Login(string correo, string password)
         {
             UsuarioModel login = new UsuarioModel();
@@ -48,6 +49,7 @@ namespace ApiRestElaniin.Controllers
             return response;
         }
         //Verifica el login del usuario en la base de datos
+       
         private UsuarioModel AuthentificateUser(UsuarioModel login)
         {
             UsuarioModel usuario = null;
@@ -63,6 +65,7 @@ namespace ApiRestElaniin.Controllers
             return usuario;
         }
         //Genera el web token
+        
         private string GenerateJSONWebTokenToken(UsuarioModel logininfo, int minutos)
         {
             var securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["jwt:Key"]));
@@ -116,7 +119,18 @@ namespace ApiRestElaniin.Controllers
                     mail.IsBodyHtml = true;
                     using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                     {
-                        smtp.UseDefaultCredentials = false;
+
+                          
+                            System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s,
+                                    System.Security.Cryptography.X509Certificates.X509Certificate certificate,
+                                    System.Security.Cryptography.X509Certificates.X509Chain chain,
+                                    System.Net.Security.SslPolicyErrors sslPolicyErrors)
+                            {
+                                return true;
+                            };
+
+
+                            smtp.UseDefaultCredentials = false;
                         smtp.Credentials = new NetworkCredential(_config["RecoveryMail:Mail"], _config["RecoveryMail:Password"]);
                         smtp.EnableSsl = true;
                         smtp.Send(mail);
