@@ -11,7 +11,27 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://hlarios7-001-site1.gtempurl.com/LoginUsuario/Login?correo=admin@mail.com&password=1234",
+					"protocol": "http",
+					"host": [
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
+					],
+					"path": [
+						"LoginUsuario",
+						"Login"
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "admin@mail.com"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						}
+					]
 				},
 				"description": "Este permite consegir el token de autorizacion jwt, sus parametros son Correo y password"
 			},
@@ -25,7 +45,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJqdGkiOiJiZjRhMzg2MS1mNjcxLTQ2MGEtODdhOC1kODJmNDhmY2ZhMzIiLCJleHAiOjE1ODg5NTM0MDIsImlzcyI6IkVsYW5paW4iLCJhdWQiOiJFbGFuaWluR3JvdXAifQ.FbnCHFlQmCsRr0RtD9eeTZ_YSLCbhOwpvwqGeWbkhX8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJqdGkiOiI1OGFmNmY5ZS0wZjZjLTRmYWYtYTNjOS1mODYxZjQzOGJjMzgiLCJleHAiOjE2MDY3OTIxMjMsImlzcyI6IkVsYW5paW4iLCJhdWQiOiJFbGFuaWluR3JvdXAifQ.4fbuTJnzModjMKflEwk21T5m8juQRoXjouHzXlqNts8",
 							"type": "string"
 						}
 					]
@@ -33,12 +53,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Usuario/Consultar?page=1&pagesize=5",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Usuario/Consultar?page=1&pagesize=5",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Usuario",
 						"Consultar"
@@ -64,12 +85,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Usuario/Detalle?id=1",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Usuario/Detalle?id=1",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Usuario",
 						"Detalle"
@@ -93,7 +115,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJqdGkiOiJiZjRhMzg2MS1mNjcxLTQ2MGEtODdhOC1kODJmNDhmY2ZhMzIiLCJleHAiOjE1ODg5NTM0MDIsImlzcyI6IkVsYW5paW4iLCJhdWQiOiJFbGFuaWluR3JvdXAifQ.FbnCHFlQmCsRr0RtD9eeTZ_YSLCbhOwpvwqGeWbkhX8",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJqdGkiOiI0OTU0ZGM2OS0wZWU5LTQyZTMtYWM2Mi1jMTdmM2EyY2VmMzMiLCJleHAiOjE2MDY3OTQ0NTcsImlzcyI6IkVsYW5paW4iLCJhdWQiOiJFbGFuaWluR3JvdXAifQ.iDt5sJprAYcN3BMxDljqg19nKfkzX0XAb9M-QSrPZpo",
 							"type": "string"
 						}
 					]
@@ -102,7 +124,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \r\n    \"usuario\": \"nuevousuario1\",\r\n    \"password\": \"1111\",\r\n    \"correo\": \"nuevoadmin@mail.com\",\r\n    \"telefono\": \"77777777\",\r\n    \"fechanacimiento\": \"1991-05-08T09:02:20.127\"\r\n}",
+					"raw": "{\r\n   \r\n    \"usuario\": \"usuario3\",\r\n    \"password\": \"1122\",\r\n    \"correo\": \"name@gmail.com\",\r\n    \"telefono\": \"77777777\",\r\n    \"fechanacimiento\": \"1991-05-08T09:02:20.127\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -110,12 +132,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44362/Usuario/Registrar",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Usuario/Registrar",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Usuario",
 						"Registrar"
@@ -150,12 +173,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44362/Usuario/Actualizar",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Usuario/Actualizar",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Usuario",
 						"Actualizar"
@@ -181,12 +205,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Usuario/Eliminar?id=10",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Usuario/Eliminar?id=10",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Usuario",
 						"Eliminar"
@@ -218,12 +243,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Producto/Consultar?page=1&pagesize=5",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Consultar?page=1&pagesize=5",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Consultar"
@@ -259,12 +285,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Producto/Detalle?id=1",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Detalle?id=1",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Detalle"
@@ -305,12 +332,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44362/Producto/Registrar",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Registrar",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Registrar"
@@ -345,12 +373,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44362/Producto/Actualizar",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Actualizar",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Actualizar"
@@ -376,12 +405,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Producto/Eliminar?id=100",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Eliminar?id=100",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Eliminar"
@@ -413,12 +443,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/Producto/Consultar?page=1&pagesize=5&sku=N0H-3C4&nombreproducto=actualizado",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/Producto/Consultar?page=1&pagesize=5&sku=N0H-3C4&nombreproducto=actualizado",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"Producto",
 						"Consultar"
@@ -450,24 +481,18 @@
 			"name": "Recuperar contraseña",
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJqdGkiOiJiZjRhMzg2MS1mNjcxLTQ2MGEtODdhOC1kODJmNDhmY2ZhMzIiLCJleHAiOjE1ODg5NTM0MDIsImlzcyI6IkVsYW5paW4iLCJhdWQiOiJFbGFuaWluR3JvdXAifQ.FbnCHFlQmCsRr0RtD9eeTZ_YSLCbhOwpvwqGeWbkhX8",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44362/LoginUsuario/ObtenerEnlaceRecuperarPassword?Correo=hlarios7@gmail.com",
-					"protocol": "https",
+					"raw": "http://hlarios7-001-site1.gtempurl.com/LoginUsuario/ObtenerEnlaceRecuperarPassword?Correo=hlarios7@gmail.com",
+					"protocol": "http",
 					"host": [
-						"localhost"
+						"hlarios7-001-site1",
+						"gtempurl",
+						"com"
 					],
-					"port": "44362",
 					"path": [
 						"LoginUsuario",
 						"ObtenerEnlaceRecuperarPassword"
