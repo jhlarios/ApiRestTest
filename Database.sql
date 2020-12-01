@@ -54,16 +54,16 @@ go
 
 
 
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('admin','1234','admin@mail.com',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()) )
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Lucy','RTI24XMS8HA','ultrices.mauris@pharetra.edu',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Dennis','FBO30DDU8OQ','erat@euaccumsan.edu',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Kathleen','WBC52OSC9BH','diam@veliteu.co.uk',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Deacon','YFB07BBZ9LG','elit.fermentum@ametmassa.net',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Kareem','LKR60DBO6UT','tincidunt.tempus.risus@Cras.org',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Rina','NZT94RUR8OB','In@enim.com',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Nita','XVU16ZTG2LX','nunc@magnisdisparturient.co.uk',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Zelda','YXX91NRO5GC','imperdiet@Loremipsum.ca',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
-INSERT INTO [ElaniinTest].[dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Mia','PQL54AUO5YB','non.luctus@rutrummagnaCras.org',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()));
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('admin','1234','admin@mail.com',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()) )
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Lucy','RTI24XMS8HA','ultrices.mauris@pharetra.edu',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Dennis','FBO30DDU8OQ','erat@euaccumsan.edu',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Kathleen','WBC52OSC9BH','diam@veliteu.co.uk',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Deacon','YFB07BBZ9LG','elit.fermentum@ametmassa.net',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Kareem','LKR60DBO6UT','tincidunt.tempus.risus@Cras.org',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Rina','NZT94RUR8OB','In@enim.com',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Nita','XVU16ZTG2LX','nunc@magnisdisparturient.co.uk',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Zelda','YXX91NRO5GC','imperdiet@Loremipsum.ca',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()))
+INSERT INTO [dbo].[USUARIOS] ([usuario],[password],[correo],[FECHAREGISTRO], telefono, fechanacimiento) VALUES ('Mia','PQL54AUO5YB','non.luctus@rutrummagnaCras.org',GETDATE(),'22222222',DATEADD(YEAR,-22,GETDATE()));
 
 
 
